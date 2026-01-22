@@ -1,0 +1,87 @@
+{
+  "name": "@jetbrain/react-yandex-maps",
+  "version": "0.1.0",
+  "description": "Yandex Maps 3.0 components library for React.",
+  "main": "./dist/react-yandex-maps.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": [
+    "*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/react-yandex-maps.js"
+    },
+    "./css": "./dist/react-yandex-maps.css",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json --noEmit && vite build",
+    "prepublishOnly": "yarn build",
+    "pack": "npm pack",
+    "npm:publish": "npm publish"
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "package.json",
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module",
+  "homepage": "https://github.com/yandex-maps-unofficial/vue-yandex-maps",
+  "bugs": {
+    "url": "https://github.com/yandex-maps-unofficial/vue-yandex-maps/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yandex-maps-unofficial/vue-yandex-maps"
+  },
+  "keywords": [
+    "яндекс карты",
+    "яндекс-карты",
+    "yandex maps",
+    "yandex-maps",
+    "yandex",
+    "maps",
+    "react",
+    "nextjs"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@yandex/ymaps3-cartesian-projection": ">=0.0.6",
+    "@yandex/ymaps3-clusterer": ">=0.0.12",
+    "@yandex/ymaps3-context-menu": ">=0.0.2",
+    "@yandex/ymaps3-default-ui-theme": ">=0.0.24",
+    "@yandex/ymaps3-drawer-control": ">=0.0.2",
+    "@yandex/ymaps3-hint": ">=0.1.2",
+    "@yandex/ymaps3-minimap": ">=0.0.4",
+    "@yandex/ymaps3-resizer": ">=0.0.2",
+    "@yandex/ymaps3-signpost": ">=0.0.2",
+    "@yandex/ymaps3-spinner": ">=0.0.2",
+    "@yandex/ymaps3-types": ">=1.0.18513693",
+    "@yandex/ymaps3-web-mercator-projection": ">=0.0.5",
+    "@yandex/ymaps3-world-utils": ">=0.0.18513693",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.9",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "deep-object-diff": "^1.1.9",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rollup": "^4.40.0",
+    "rollup-plugin-delete": "^3.0.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vite-plugin-dts": "^4.5.4",
+    "vite-plugin-lib-inject-css": "^2.2.2"
+  }
+}

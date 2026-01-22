@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "typeRoots": [
+      "../../node_modules/@types",
+      "../../node_modules/@yandex/ymaps3-types"
+    ]
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "dist",
+    "vite.config.ts"
+  ]
+}
+

@@ -7,12 +7,13 @@
         "docs:build": "vitepress build docs",
         "docs:preview": "vitepress preview docs",
         "build": "yarn workspace vue-yandex-maps build",
+        "build:react": "yarn workspace @jetbrain/react-yandex-maps build",
         "run:vue": "yarn workspace vue-yandex-maps build:package-only && yarn workspace example-vue dev",
         "run:nuxt": "yarn workspace vue-yandex-maps build && yarn workspace example-nuxt dev",
         "run:astro": "yarn workspace vue-yandex-maps build && yarn workspace example-astro dev",
         "lint": "eslint . --max-warnings 0",
         "lint:fix": "yarn lint --fix",
-        "check": "yarn lint && yarn build && yarn docs:build",
+        "check": "yarn lint && yarn build && yarn build:react && yarn docs:build",
         "publish": "yarn lint && yarn build && yarn workspace vue-yandex-maps npm:publish"
     },
     "dependencies": {

@@ -1,0 +1,33 @@
+.__ymap {
+  color: #000;
+  position: relative;
+}
+
+.__ymap_container {
+  width: 100%;
+  height: 100%;
+}
+
+.__ymap--grab [class$="main-engine-container"] canvas {
+  cursor: grab;
+}
+
+.__ymap--grabbing:focus [class$="main-engine-container"] canvas,
+.__ymap--grabbing:active [class$="main-engine-container"] canvas {
+  cursor: grabbing;
+}
+
+.__ymap [class$="graphics-layer"] {
+  text-align: left;
+}
+
+.__ymap-marker {
+  position: relative;
+}
+
+.__ymap-marker_wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
